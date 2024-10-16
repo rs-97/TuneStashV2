@@ -1,0 +1,19 @@
+{
+  "name": "tunestash",
+  "version": "0.0.1",
+  "description": "electron based music player",
+  "main": "build/index.js",
+  "dependencies": {
+    "copyfiles": "^2.4.1",
+    "electron": "^33.0.0",
+    "typescript": "^5.6.3",
+    "usetube": "^2.2.7",
+    "youtube-search-api": "^1.2.2"
+  },
+  "scripts": {
+    "compile": "tsc && copyfiles -f client/index.html build",
+    "start": "npm run compile && electron ."
+  },
+  "author": "Richard Saville",
+  "license": "ISC"
+}
