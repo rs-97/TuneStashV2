@@ -1,0 +1,26 @@
+* {
+    /* --color: red; */
+    --color: rgb(9 9 11);
+}
+
+.sidebardropper::before,
+.sidebardropper::after {
+    content: '';
+    position: absolute;
+    width: 35%;
+    height: 35%;
+    left: 100%;
+    transform: translateX(-112%);
+}
+
+.sidebardropper::before {
+    top: -35%;
+    background-image:
+        radial-gradient(circle at 0% 0%, transparent 2.1rem, var(--color) 2.1rem)
+}
+
+.sidebardropper::after {
+    bottom: -35%;
+    background-image:
+        radial-gradient(circle at 0% 100%, transparent 2.1rem, var(--color) 2.1rem)
+}
